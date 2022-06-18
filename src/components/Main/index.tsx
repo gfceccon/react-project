@@ -1,3 +1,6 @@
+import Article from "../Article";
+import Components from "../Articles/Components";
+import Properties from "../Articles/Properties";
 
 /**
  * Componente com conteúdo principal
@@ -5,9 +8,16 @@
 function Main() {
     return (
         <main>
-            <h2>Componentes</h2>
-            <p>Componentes são uma parte fundamental do React, neles definimos comportamentos e conteúdo da página, usando JSX (uma mistura de Javascript e HTML).</p>
-            <p>Eles podem ser definidos através de classes ou funções, esse sendo mais popularmente usado.</p>
+            {/**
+             * Esse é um comentário dentro do JSX.
+             * Passamos um componente através do props colocando dentro dele. Ele pode ser acessado via props.children
+             */}
+            <Article>
+                <Components></Components>
+            </Article>
+            <Article>
+                <Properties fruta="Maça" cor="red"></Properties>
+            </Article>
         </main>
     );
 }
