@@ -18,6 +18,8 @@ export default function Properties(props : Properties) {
              * Para estilo inline, basta passar um objeto com as tags de estilo.
              */}
             <p>Eu gosto de <span style={{color: props.cor}}>{props.fruta}</span></p>
+            
+            <p>Também podemos passar componentes como propriedade, nesse caso chamamos de children e podemos acessa-lo usando a interface PropsWithChildren passando a Properties, e usar props.children</p>
         </>
      );
 }

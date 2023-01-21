@@ -19,7 +19,15 @@ function App() {
     <>
       <Header></Header>
       <Main></Main>
-      <Footer></Footer>
+      {
+        /**
+         * Podemos passar um JSX ou Componente para outro componente, ele será considerado como componente "filhos" (children).
+         * Isso é necessário em algumas bibliotecas como Routers e útil quando queremos passar um contéudo inteiro para outro componente.
+         */
+      }
+      <Footer>
+        <p>Projeto construído por Gustavo Ceccon.</p>
+      </Footer>
     </>
   )
 }
