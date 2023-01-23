@@ -1,6 +1,7 @@
 import Article from "../Article";
 import Components from "../Articles/Components";
 import Properties from "../Articles/Properties";
+import Refs from "../Articles/Refs";
 
 /**
  * Componente com conteúdo principal
@@ -17,6 +18,7 @@ function Main() {
             </Article>
             <Article>
                 <Properties fruta="Maça" cor="red"></Properties>
+                <Refs></Refs>
             </Article>
         </main>
     );

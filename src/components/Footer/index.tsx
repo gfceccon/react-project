@@ -1,7 +1,8 @@
 import { PropsWithChildren} from "react";
 
 /**
- * Componente de rodapé
+ * Componente de rodapé, bastante similar ao jeito que fazemos a Main (passando children).
+ * Nesse caso não explicitamos através do Props
  */
 
 interface Properties {
